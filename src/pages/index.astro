@@ -1,31 +1,10 @@
 ---
-import Menu from '../components/menu.astro';
-import Footer from '../components/footer.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
 import Values from '../components/values.astro';
-import Team from '../components/team.astro';
-const { title } = Astro.props;
+import Team from '../components/team.svelte';
 ---
 
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{title}</title>
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="stylesheet" href={Astro.resolve('../assets/global.css')} />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"
-    />
-    <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/theme-change@2.0.2/index.js"></script>
-  </head>
-  <body>
-    <div class="tutors-container">
-      <Menu />
-      <Values />
-      <Team />
-      <Footer />
-    </div>
-  </body>
-</html>
+<BaseLayout title="Tutors Open Source Project">
+  <Values />
+  <Team />
+</BaseLayout>
