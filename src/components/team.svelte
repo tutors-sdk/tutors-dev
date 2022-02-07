@@ -39,18 +39,18 @@ let team = [
     <h2 class="card-title">Contributors</h2>
     <div class="flex flex-wrap justify-center">
       {#each team as member}
-      <a href={member.github} target="_blank">
-        <div class="card text-center shadow-2xl bg-base-100 w-72 p-8 m-2">
-          <div>
-            <div class="avatar">
-              <div class="rounded-full w-14 h-14 shadow"><img src={member.avatar}></div>
+        <a href={member.github} target="_blank">
+          <div class="card card-side text-center shadow-2xl bg-base-100 w-56 m-2">
+            <div>
+              <div class="avatar">
+                <div class="rounded-full mt-1 ml-1 w-14 h-14 shadow"><img src={member.avatar}></div>
+              </div>
+            </div>
+            <div class="ml-4 mt-6">
+              <h2 class="card-title text-sm">{member.name}</h2>
             </div>
           </div>
-          <div>
-            <h2 class="card-title">{member.name}</h2>
-          </div>
-        </div>
-      </a>
+        </a>
       {/each}
     </div>
   </div>
