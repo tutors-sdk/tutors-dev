@@ -1,12 +1,12 @@
 ---
 import { Markdown } from 'astro/components';
+// const imageUrl = "background-image:url('https://source.unsplash.com/sV-s0oOSNTY/1920x1280')";
+//const imageUrl = "background-image:url('https://source.unsplash.com/zxg2EJt2ltw/1920x1280')";
+const imageUrl = "background-image:url('https://source.unsplash.com/x6sZagaUOM4/1920x1280')";
 ---
 
-<div
-  class="flex items-center w-full px-4 py-10 bg-cover card bg-base-200"
-  style="background-image:url(https://source.unsplash.com/sV-s0oOSNTY/1920x1280)"
->
-  <div class="card glass text-neutral-content">
+<div class="flex items-center w-full px-4 py-10 bg-cover card bg-base-200" style={imageUrl}>
+  <div class="card glass text-gray-900">
     <div class="card-body">
       <div class="prose">
         <Markdown>
